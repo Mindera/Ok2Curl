@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.mrmike</groupId>
+    <artifactId>ok2curl</artifactId>
+    <version>0.4.5</version>
+    <name>Ok2Curl</name>
+    <description>Convert OkHttp requests into curl logs.</description>
+    <url>https://github.com/mrmike/Ok2Curl</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>mrmike</id>
+            <name>Michał Moczulski</name>
+            <email>moczul@gmail.com</email>
+        </developer>
+        <developer>
+            <id>crodrigues</id>
+            <name>César Rodrigues</name>
+            <email>cesar.rodrigues@mindera.com</email>
+        </developer>
+    </developers>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.9.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>2.10.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>mockwebserver</artifactId>
+            <version>3.9.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>mindera-releases</id>
+            <name>Mindera Nexus Releases Repository</name>
+            <url>http://nexus.internal.mindera.com/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>mindera-snapshots</id>
+            <name>Mindera Nexus Snapshots Repository</name>
+            <url>http://nexus.internal.mindera.com/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
